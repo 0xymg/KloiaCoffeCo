@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Components/Header";
+import Categories from "./Components/Sidebar/Categories";
+import Searchbar from "./Components/Sidebar/Searchbar";
+import CoffeCard from "./Components/Content/CoffeCard";
+import { Container, Row, Col } from "reactstrap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Container>
+
+        <Row>
+          <Header></Header>
+        </Row>
+
+        <Row className="container mt-2">
+          <Col className="col-3 my-2 border-right">
+            <Searchbar />
+            <Categories />
+          </Col>
+
+          <Col className="col-9 my-2">
+            <CoffeCard />
+          </Col>
+
+        </Row>
+
+      </Container>
     </div>
   );
 }
