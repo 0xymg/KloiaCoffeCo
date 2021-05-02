@@ -7,11 +7,11 @@ So, I did not able to catch up search functions. Except that, It works perfectly
 
 ## Design Notes: 
   *  I have used class components in this react project. 
-  *  Since we do not have a backend server, I have used Json-Server for API requests. 
-  *  I have used REDUX for state management. I used redux for listing, and filtering by categories
-  *  For interface I have used Bootstrap and Reactstrap 
-  *  I have worked with 2 branches. Master and dev.
-  *  Client side works on port:3000 and Json server must be worked on port:3001
+  *  Since we do not have a backend server, I have used `Json-Server` for API requests. 
+  *  I have used `REDUX` for state management. I used redux for listing, and filtering by categories
+  *  For interface I have used `Bootstrap` and `Reactstrap`
+  *  I have worked with 2 branches. `Master` and `dev`.
+  *  Client side works on `port:3000` and Json server must be worked on `port:3001`
   *  I needed to add some data to coffees.json, so you should use coffees.json that is in this repo
   
 
