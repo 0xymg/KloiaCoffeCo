@@ -30,7 +30,7 @@ So, I did not able to catch up Searchbar. Except that, It works perfectly.
  ```
  
  for JSON Server: 
- navigate to api foler, then:
+ navigate to api folder, then:
  ```
  json-server -p 3001 --watch coffee.json
  ```
