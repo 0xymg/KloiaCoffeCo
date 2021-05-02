@@ -181,4 +181,10 @@
     "category": "iced", 
     "id": 26
     }
-]}
+],
+"categories": [
+    {"id" : 1, "category": "all", "categoryName": "ALL"},
+    {"id" : 2, "category": "iced", "categoryName": "ICED"},
+    {"id" : 3, "category": "hot", "categoryName": "HOT"}
+]
+}

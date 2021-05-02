@@ -1,30 +1,62 @@
 import React, { Component } from "react";
-import { ListGroup, ListGroupItem, Badge } from "reactstrap";
+import { ListGroup, ListGroupItem } from "reactstrap";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import * as categoryActions from "../../Redux/actions/categoryActions";
+import * as coffeeListActions from "../../Redux/actions/coffeeListActions";
 
-export default class Categories extends Component {
-    state = {
-        categories: [
-            {categoryID: 1, categoryName: "All"},
-            {categoryID: 2, categoryName: "Iced"},
-            {categoryID: 3, categoryName: "Hot"}
-        ],
-        currentCategory: ""
-    };
+class Categories extends Component {
+  componentDidMount() {
+    this.props.actions.getCategories();
+  }
 
-    changeCategory = (category)=> {
-        this.setState({currentCategory: category.categoryName})
-    }
+  selectCategory = (category) => {
+    this.props.actions.changeCategory(category);
+    this.props.actions.getCoffeeList(category.category)
+  };
 
   render() {
     return (
       <div className="my-2">
         <ListGroup>
-            {this.state.categories.map(category => (
-                <ListGroupItem onClick={()=>this.changeCategory(category)} key={category.categoryID}>{category.categoryName} <Badge pill>14</Badge></ListGroupItem>
-            ))}
+          {this.props.categories.map((category) => (
+            <ListGroupItem
+              active={category.id === this.props.currentCategory.id}
+              onClick={() => this.selectCategory(category)}
+              key={category.id}
+            >
+              {category.categoryName}
+            </ListGroupItem>
+          ))}
         </ListGroup>
-        {this.state.currentCategory}
       </div>
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    currentCategory: state.changeCategoryReducer,
+    categories: state.categoryListReducer,
+  };
+}
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: {
+      getCategories: bindActionCreators(
+        categoryActions.getCategories,
+        dispatch
+      ),
+      changeCategory: bindActionCreators(
+        categoryActions.changeCategory,
+        dispatch
+      ),
+      getCoffeeList: bindActionCreators(
+        coffeeListActions.getCoffeeList,
+        dispatch
+      ),
+    },
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Categories);
