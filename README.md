@@ -8,7 +8,7 @@ So, I did not able to catch up search functions. Except that, It works perfectly
 ## Design Notes: 
   *  I have used class components in this react project. 
   *  Since we do not have a backend server, I have used Json-Server for API requests. 
-  *  I have used REDUX for state management. 
+  *  I have used REDUX for state management. I used redux for listing, and filtering by categories
   *  For interface I have used Bootstrap and Reactstrap 
   *  I have worked with 2 branches. Master and dev.
   *  Client side works on port:3000 and Json server must be worked on port:3001
@@ -20,11 +20,10 @@ So, I did not able to catch up search functions. Except that, It works perfectly
 Clone this repo. <br>
 After that, navigate to folder that you cloned. Then navigate with your terminal to client folder
 
-``` python
+```javascript
  cd  client
  npm install
  npm start
- 
  ```
  
  for JSON Server: 
