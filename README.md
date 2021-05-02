@@ -34,4 +34,9 @@ After that, navigate to folder that you cloned. Then navigate with your terminal
  ```
  json-server -p 3001 --watch coffee.json
  ```
- !! Make sure that you have json-server on your machine
+ !! Make sure that you have json-server on your machine <br>
+ 
+ If you do not have, try this: 
+  ```
+npm install -g json-server
+```
