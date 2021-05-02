@@ -3,8 +3,8 @@ export default {
     categories : [],
     coffeeList: [],
     error: "",
-    coffeeFilter: {
-        searchKey: '',
-        search: ''
+    coffeeFilter : {
+        searchKey:'',
+        search:''
     }
 }
