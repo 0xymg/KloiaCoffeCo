@@ -6,7 +6,7 @@ Since I don't have much experience in React, It takes times to learn React and R
 So, I did not able to catch up Searchbar. Except that, It works perfectly.
 
 ## Design Notes: 
-  * 1- I've class components in this project. 
+  * 1- I have used class components in this react project. 
   * 2- Since we do not have a backend server. I have used Json-Server for API requests. 
   * 3- I use REDUX for state management. 
   * 4- For interface I have used Bootstrap and Reactstrap 
