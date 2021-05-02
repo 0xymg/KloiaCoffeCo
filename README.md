@@ -1,5 +1,5 @@
 # Coffee React Prject
-This project is for case study for interview
+This project is a case study for interview proccess. 
 
 ## Important!!! :
 Since I don't have much experience in React, It takes times to learn React and Redux. <br>
