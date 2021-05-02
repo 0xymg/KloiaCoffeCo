@@ -3,7 +3,7 @@ React assignment for interview. <br>
 
 ## Important!!! :
 Since I don't have much experience in React, It takes times to learn React and Redux. <br>
-So, I did not able to catch up Searchbar. Except that, It works perfectly.
+So, I did not able to catch up search functions. Except that, It works perfectly.
 
 ## Design Notes: 
   * 1- I have used class components in this react project. 
