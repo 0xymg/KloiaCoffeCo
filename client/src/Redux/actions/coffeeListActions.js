@@ -10,7 +10,7 @@ export function getCoffeeList(category) {
   return function (dispatch) {
     let url = "http://localhost:3001/coffees"
     if(category){
-        if(category != "all"){
+        if(category !== "all"){
             url = url + "?category=" + category
         }
     }
@@ -19,4 +19,5 @@ export function getCoffeeList(category) {
       .then(result => dispatch(getCoffeeListSuccess(result)));
   };
 }
+
 

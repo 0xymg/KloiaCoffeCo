@@ -10,3 +10,4 @@ export default function coffeeListReducer(state= initialState.coffeeList, action
             return state;
     }
 }
+
