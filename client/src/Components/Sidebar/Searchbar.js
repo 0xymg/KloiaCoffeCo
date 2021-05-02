@@ -6,7 +6,7 @@ export default class Searchbar extends Component {
     return (
       <div className="my-2">
         <InputGroup>
-          <Input placeholder="Keywords..."/>
+          <Input type="text " placeholder="Keywords..."/>
           <InputGroupAddon addonType="append">
             <InputGroupText>Search</InputGroupText>
           </InputGroupAddon>
