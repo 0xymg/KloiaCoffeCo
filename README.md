@@ -1,9 +1,6 @@
 # Coffee React Prject
 This project is a case study for interview proccess. 
 
-## Important!!! :
-Since I don't have much experience in React, It takes times to learn React and Redux. <br>
-So, I did not able to catch up search functions. Except that, It works perfectly.
 
 ## Design Notes: 
   *  I have used class components in this react project. 
